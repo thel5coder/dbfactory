@@ -17,6 +17,7 @@ type Psql struct {
 	SslRootCert string
 }
 
+//creating new instance of postgresql connection
 func NewPsql() Database {
 	//set default maximum open connection
 	maxCon := stringToInt(os.Getenv("DB_MAX_CONNECTION"))
