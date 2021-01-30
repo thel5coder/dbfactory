@@ -1,4 +1,4 @@
-module dbfactory
+module github.com/thel5coder/dbfactory
 
 go 1.14
 
