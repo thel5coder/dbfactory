@@ -55,7 +55,7 @@ func NewPsql() Database {
 	}
 }
 
-func (psql *Psql) MakeSQLConnection() (err error) {
+func (psql *Psql) MakeConnection() (err error) {
 	connStr := fmt.Sprintf(
 		"postgres://%s:%s@%s:%s/%s?sslmode=%s&TimeZone=UTC", psql.DefaultConfig.User, psql.DefaultConfig.Password,
 		psql.DefaultConfig.Host, psql.DefaultConfig.Port, psql.DefaultConfig.DbName, psql.SslMode,

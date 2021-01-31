@@ -32,7 +32,7 @@ var (
 )
 
 type Database interface {
-	MakeSQLConnection() (err error)
+	MakeConnection() (err error)
 
 	MakeTransaction() (err error)
 
